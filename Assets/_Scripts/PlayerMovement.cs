@@ -9,9 +9,9 @@ public class PlayerMovement : MonoBehaviour{
 	[SerializeField] private Transform playerOrientation;
 	[SerializeField] private Transform groundCheckTransform;
 	[SerializeField] private LayerMask groundLayers;	
+	[SerializeField] private PlayerStatsSO playerStatsSO;
 
 	[Header("Base Movement Variables")]
-	[SerializeField] private float movementSpeed;
 	[SerializeField] private float slopeRayStandingDetectDistance = 1.05f;
 
 	[Header("Jumping Variables")]
@@ -194,8 +194,10 @@ public class PlayerMovement : MonoBehaviour{
 		if(playerMoveInput != previousMoveInput){
 			OnPlayerMovementDirectionChanged?.Invoke(this, new PlayerMovementDirectionChangedEventArgs(playerMoveInput));
 		}
+		
+		float movementSpeedCalc = playerStatsSO.baseMovementSpeed * (1 + playerStatsSO.movementSpeedIncreasePercent);
 
-		Vector3 velocity = movementSpeed * (moveDirection.normalized + ExternalMovement);
+		Vector3 velocity = movementSpeedCalc * (moveDirection.normalized + ExternalMovement);
 
 		velocity = AdjustMovementVectorToSlope(velocity);
 		velocity.y += verticalVelocity;
