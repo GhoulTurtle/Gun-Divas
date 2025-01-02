@@ -378,7 +378,7 @@ MonoBehaviour:
   groundLayers:
     serializedVersion: 2
     m_Bits: 64
-  movementSpeed: 11
+  playerStatsSO: {fileID: 11400000, guid: 0c39adac6bd4eea49afd81f9fe44cc02, type: 2}
   slopeRayStandingDetectDistance: 1.05
   maxJumpHeight: 4.5
   jumpCooldown: 0
