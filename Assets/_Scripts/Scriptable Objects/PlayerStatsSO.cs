@@ -19,8 +19,11 @@ public class PlayerStatsSO : ScriptableObject{
     public float currentHealth;
     public int currentCash;
     public BaseDivaSO currentEquippedDiva;
-    public BaseWeaponSO currentEquippedWeapon;
+    public BaseGunStatsSO currentEquippedWeapon;
     public List<PlayerUpgrade> playerUpgradesList = new List<PlayerUpgrade>();
+
+    public Action OnWeaponEquipped;
+    public Action OnDivaEquipped;
 
     [ContextMenu("Reset Player Stats")]
     public void ResetPlayerStats(){

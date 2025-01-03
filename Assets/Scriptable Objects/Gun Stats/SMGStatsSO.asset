@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25e42b0b16406e149928cec1a0c600ae, type: 3}
+  m_Name: SMGStatsSO
+  m_EditorClassIdentifier: 
+  gunPrefab: {fileID: 860791341178808624, guid: 76b2bbe7f063f4b47893cfc941fb99a8, type: 3}
+  weaponFireRateInSeconds: 0.3
+  weaponReloadTimeInSeconds: 1.2
+  weaponAttackDamage: 15
+  baseBloomAngle: 0
+  minKickBackShotAmount: 0
+  kickBackWindowInSeconds: 0
+  kickBackAmount: 0
+  maxAmmo: 0
