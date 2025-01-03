@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0d5283aa34b424db5b41a910834978, type: 3}
   m_Name: ShotgunStatsSO
   m_EditorClassIdentifier: 
-  gunPrefab: {fileID: 0}
+  gunPrefab: {fileID: 860791341178808624, guid: 219bd6199ed95ca4fa6d15bb7fc139a2, type: 3}
   weaponFireRateInSeconds: 0.6
   weaponReloadTimeInSeconds: 0
   weaponAttackDamage: 5

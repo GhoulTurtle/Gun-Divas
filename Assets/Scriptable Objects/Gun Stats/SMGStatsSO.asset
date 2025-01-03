@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25e42b0b16406e149928cec1a0c600ae, type: 3}
   m_Name: SMGStatsSO
   m_EditorClassIdentifier: 
-  gunPrefab: {fileID: 0}
+  gunPrefab: {fileID: 860791341178808624, guid: 76b2bbe7f063f4b47893cfc941fb99a8, type: 3}
   weaponFireRateInSeconds: 0.3
   weaponReloadTimeInSeconds: 1.2
   weaponAttackDamage: 15

@@ -22,4 +22,6 @@ public class BaseGunStatsSO : ScriptableObject{
     public float kickBackAmount;
     [Tooltip("The max amount of ammo that the weapon has.")]    
     public int maxAmmo;
+    [Tooltip("The percent of movement speed that the weapon adds/removes")]
+    public float movementSpeedIncreasePercent;
 }
